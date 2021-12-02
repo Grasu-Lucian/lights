@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.string {
+  position: absolute;
+  top: -12vh;
+  width: 230%;
+  height: 15vh;
+  border: 5px solid transparent;
+  border-bottom: 5px solid rgb(75, 74, 74);
+  border-radius: 50%;
+}
+.total {
+  position: relative;
+  width: 54%;
+  .light {
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    left: -6%;
+    .connecter {
+      position: relative;
+      width: 40%;
+      left: 30%;
+      height: 2vw;
+      background-color: rgb(54, 54, 54);
+    }
+    .connecter1 {
+      position: relative;
+      z-index: 3;
+      width: 66%;
+      top: -3px;
+      left: 17%;
+      height: 3vw;
+      background-color: rgb(54, 54, 54);
+      -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    }
+
+    .light-bulb {
+      position: relative;
+      z-index: -3;
+      top: -10px;
+      width: 90%;
+      border-radius: 50%;
+      left: 5%;
+      height: 7vw;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    .top {
+      position: relative;
+      z-index: 3;
+      box-shadow: 0px 0px 60px 55px transparent;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 10px;
+      border-radius: 90%;
+    }
+  }
+}
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  button {
+   width: 25%;
+   padding: 40px;
+   font-size: 3rem;
+   color: white;
+   background: transparent;
+   outline: none;
+   border:none;
+   &:hover{
+    color: rgb(139, 136, 136);
+   }
+  }
+}
